@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registration Form</title>
+        <title style="text-align: center;">Registration Form</title>
     </head>
     <body>
-       <h1>REGISTRATION FORM FOR COHORT 10</h1>
+      <div class="Registration form" style="font-size: x-large; text-align: justify;">
+       <h1 style="text-decoration: underline;">REGISTRATION FORM FOR COHORT 10</h1>
         <form action="index.php" method="post" enctype="multipart/form-data">
-
-            <label for="name" style="font-size: x-large;">NAME:</label>
-            <input type="name" style="font-size: large;">
+       <div class="input-box">
+         <label for="name">NAME:</label>
+            <input type="text" id="name" placeholder="Enter full name" size="80">
+        </div>
+        <br>
+        <div class="input-box">
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" placeholder="Sarah" size="80">
             <br>
-
-            <label for="username" style="font-size: x-large;">USERNAME:</label>
-            <input type="text" id="username" placeholder="Sarah" style="font-size: large;">
-            <br>
-
-            <label for="bday" style="font-size: x-large;">BIRTHDATE:</label>
-            <input type="date" id="bday" style="font-size: large;">
-            <br>
-
-            <label for="email" style="font-size: x-large;;">EMAIL:</label>
-            <input type="email" placeholder="rex23@gmail.com" style="font-size: large;">
-            <br>
-
-            <label for="file" style="font-size: x-large;">FILE:</label>
-            <input type="file" id="file" accept="image/jpeg" style="font-size: large;">
-            <br>
-
-            <label for="country" style="font-size: x-large;">COUNTRY:</label>
-            <select id="country" style="font-size: large;">
+        </div>    
+       <br>
+        <div class="input-box">
+            <label for="bday">BIRTHDATE:</label>
+            <input type="date" id="bday">
+       </div>
+       <br>    
+       <div class="input-box">    
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" placeholder="rex23@gmail.com" size="80">
+       </div>
+       <br>
+       <div class="gender-details-box">
+       <label for="gender">GENDER:</label>
+       <label for="male">MALE</label>
+       <input type="radio" id="male" value="male" name="gender">
+       <label for="female">FEMALE</label>
+       <input type="radio" id="female" value="female" name="gender">
+       <label for="others">OTHERS</label>
+       <input type="radio" id="others" value="others" name="gender">
+      </div>
+      <br>
+       <div class="input-box">
+            <label for="file">FILE:</label>
+            <input type="file" id="file" accept="image/jpeg" size="40">
+       </div>
+       <br>
+       <div class="input box"> 
+            <label for="country">COUNTRY:</label>
+            <select id="country">
                 <option value="Afghanistan" >Afghanistan</option>
                 <option value="Belgium" >Belgium</option>
                 <option value="Canada" >Canada</option>
@@ -47,25 +64,31 @@
                 <option value="Oman" >Oman</option>
                 <option value="Others" >Others</option>
                </select>
-            <br>
-
-            <label for="others" style="font-size: x-large;">OTHERS:</label>
-            <input type="text" id="others" placeholder="Portugal" style="font-size: large;">
-            <br>
-
-            <label for="password" style="font-size: x-large;">PASSWORD:</label>
-            <input type="text and number" id="password" style="font-size: large;">
-            <br>
-
-            <label for="terms and conditions Accept" style="font-size: x-large;">TERMS AND CONDITIONS: ACCEPT</label>
-            <input type="checkbox" id="terms and conditions Accept" style="font-size: large;">
-            <br>
+        </div>
+    <br>
+        <div class="input-box">
+            <label for="others">OTHERS:</label>
+            <input type="text" id="others" placeholder="Portugal" size="80">
+        </div>
+    <br>
+        <div class="input-box">
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" placeholder="Enter password" size="80">
+        </div>    
+    <br>
+        <div>
+            <label for="terms and conditions Accept">TERMS AND CONDITIONS: ACCEPT</label>
+            <input type="checkbox" id="terms and conditions Accept">
             Hertechtrail academy reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.By continuing to access or use our website after any revisions become effective, you agree to be bound by the revised terms.
-            <br>
-            <input type="submit" style="font-size: x-large;">
-
-        </form>
         <hr>
+        </div>
+        <br>
+        <div class="form-submit-button">
+        <input type="submit" value="SUBMIT" style="font-size: larger; ;">
+       </div>
+        </div>
+    </form>
+    <br>
         <footer>
             DESIGNED BY MIA 
             &copy;copyright reserved<br>
